@@ -17,6 +17,16 @@ h2 {
 	font-size: 48px;
 }
 
+h3 {
+	font-size: 40px;
+}
+h4 {
+	font-size: 32px;
+}
+h5 {
+	font-size: 28px;
+}
+
 body {
 	background-color: #e6e6e6;
 }
@@ -24,16 +34,31 @@ body {
 header {
 	display: flex;
 	flex-direction: column;
-	/*height: 750px;*/
-	justify-content: space-evenly;
+	height: 450px;
+	justify-content: space-around;
 	align-items: center;
+	text-align: center;
 }
+
+main {
+	display: grid;
+	grid-template-rows: 100px repeat(2, 300px);
+	grid-template-columns: repeat(3, 33%);
+	grid-gap: 3em;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 .wrapper {
-	width: 60%;
+	width: 65%;
 	margin: auto;
 }
+
 .nav {
-	width: 60%;
+	width: 65%;
 	margin: auto;
 	display: flex;
 }
@@ -42,10 +67,11 @@ header {
 	width: 100%;
 	background: linear-gradient(to bottom, transparent 20%, white 20% 80%, transparent 80%);
 	margin-top: 10px;
-	height: 100px;
-
+	height: 105px;
 }
-
+.logo {
+	font-size: 33px;
+}
 .right {
 	margin-left: auto;
 }
@@ -73,17 +99,28 @@ header {
 
 .circle {
 	text-align: center;
-	width: 16vmin;
-	height: 16vmin;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
+.circle-lg {
+	width: 10em;
+	height: 10em;
+
+}
+
 .circle-sm {
 	text-align: center;
-	padding: 3em;
 	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	margin: .2em;
+}
+
+.circle-badges {
+	margin-left: auto;
+	display: flex;
 }
 
 .circle-border {
@@ -107,11 +144,77 @@ header {
 	background: #00aba9;
 }
 
-.featured {
+.title1 {
+	grid-area: 1 / 1 / 2 / 2;
 	display: flex;
-	width: 100%;
+	align-items: flex-end;
+}
+
+.title2 {
+	grid-area: 1 / 3 / 2 / 4;
+	display: flex;
+	align-items: flex-end;
 }
 
 .featured-project {
-	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ipad {
+	grid-area: 2 / 1 / 3 / 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.macbook {
+	grid-area: 2 / 2 / 3 / 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.rayban-man {
+	grid-area: 3 / 1 / 4 / 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.security {
+	grid-area: 3 / 2 / 4 / 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.feed {
+	grid-area: 2 / 3 / 4 / 4;
+	display: flex;
+	flex-direction: column;
+}
+
+.feed-item {
+	display: flex;
+	align-items: center;
+	margin: .5em 0 2em 0;
+}
+.feed-twitter {
+	display: flex;
+	flex-direction: column;
+	margin: .5em 0;
+}
+i {
+	color: #1d8def;
+	font-size: 1.5em;
+	margin-right: .2em;
+}
+
+main img {
+	border: .5em solid #e0e0e0;
+}
+.feed img {
+	border: .2em solid #e0e0e0;
+	margin: 0 .4em 0 0;
+	object-fit: cover;
+	width: 20%;
+	height: 75px;
 }
