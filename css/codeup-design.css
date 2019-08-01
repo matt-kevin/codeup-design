@@ -30,6 +30,7 @@ h5 {
 }
 
 body {
+	width: 100%;
 	background-color: #e6e6e6;
 }
 
@@ -45,8 +46,8 @@ header {
 main {
 	display: grid;
 	grid-template-rows: 100px repeat(2, 300px);
-	grid-template-columns: repeat(3, 33%);
-	grid-gap: 3em;
+	grid-template-columns: repeat(3, 30%);
+	grid-gap: 5%;
 }
 
 a {
@@ -67,7 +68,7 @@ a {
 }
 
 .nav-container {
-	width: 100%;
+	/*width: 100%;*/
 	background: linear-gradient(to bottom, transparent 20%, white 20% 80%, transparent 80%);
 	margin-top: 10px;
 	height: 105px;
@@ -223,3 +224,6 @@ main img {
 	width: 20%;
 	height: 75px;
 }
+/*@media all and (min-width: 480px) and (max-width: 768px) {*/
+
+/*}*/
