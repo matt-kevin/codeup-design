@@ -20,9 +20,11 @@ h2 {
 h3 {
 	font-size: 40px;
 }
+
 h4 {
 	font-size: 32px;
 }
+
 h5 {
 	font-size: 28px;
 }
@@ -53,14 +55,15 @@ a {
 }
 
 .wrapper {
-	width: 65%;
+	width: 1050px;
 	margin: auto;
 }
 
 .nav {
-	width: 65%;
+	width: 1050px;
 	margin: auto;
 	display: flex;
+	align-items: center;
 }
 
 .nav-container {
@@ -69,17 +72,20 @@ a {
 	margin-top: 10px;
 	height: 105px;
 }
+
 .logo {
-	font-size: 33px;
-}
-.right {
-	margin-left: auto;
+	height: 105px;
+	width: 105px;
 }
 
-.nav-bar {
-	list-style: none;
+.logo-text {
+	font-size: 33px;
+}
+
+.nav-bar-logo {
 	display: flex;
 	align-items: center;
+	margin-right: auto;
 }
 
 .nav-link {
@@ -102,30 +108,24 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	border-radius: 100%;
 }
 
 .circle-lg {
 	width: 10em;
 	height: 10em;
-
+	border: .5em solid white;
 }
 
 .circle-sm {
-	text-align: center;
-	border-radius: 50%;
-	width: 2em;
-	height: 2em;
+	width: 1.5em;
+	height: 1.5em;
 	margin: .2em;
 }
 
 .circle-badges {
 	margin-left: auto;
 	display: flex;
-}
-
-.circle-border {
-	border: .5em solid white;
-	border-radius: 100%;
 }
 
 .red-circle {
@@ -197,11 +197,13 @@ a {
 	align-items: center;
 	margin: .5em 0 2em 0;
 }
+
 .feed-twitter {
 	display: flex;
 	flex-direction: column;
 	margin: .5em 0;
 }
+
 i {
 	color: #1d8def;
 	font-size: 1.5em;
@@ -209,8 +211,11 @@ i {
 }
 
 main img {
+	height: 80%;
+	width: 100%;
 	border: .5em solid #e0e0e0;
 }
+
 .feed img {
 	border: .2em solid #e0e0e0;
 	margin: 0 .4em 0 0;
