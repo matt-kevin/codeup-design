@@ -232,13 +232,16 @@ main img {
 	height: 75px;
 }
 
+/*Medium*/
 @media all and (max-width: 1024px) {
 	.nav {
 		width: 100%;
 	}
+
 	.wrapper {
 		width: 100%;
 	}
+
 	h1 {
 		font-size: 48px;
 	}
@@ -250,10 +253,12 @@ main img {
 	h4 {
 		font-size: 28px;
 	}
+
 	h5 {
 		font-size: 24px;
 	}
 }
+
 /*Small*/
 @media all and (max-width: 720px) {
 	.nav {
