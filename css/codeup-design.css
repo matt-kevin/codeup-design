@@ -30,7 +30,6 @@ h5 {
 }
 
 body {
-	/*width: 100%;*/
 	background-color: #e6e6e6;
 }
 
@@ -222,6 +221,7 @@ main img {
 	height: 80%;
 	width: 100%;
 	border: .5em solid #e0e0e0;
+	object-fit: cover;
 }
 
 .feed img {
@@ -232,8 +232,30 @@ main img {
 	height: 75px;
 }
 
-/*Small*/
 @media all and (max-width: 1024px) {
+	.nav {
+		width: 100%;
+	}
+	.wrapper {
+		width: 100%;
+	}
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h4 {
+		font-size: 28px;
+	}
+	h5 {
+		font-size: 24px;
+	}
+}
+/*Small*/
+@media all and (max-width: 720px) {
 	.nav {
 		justify-content: center;
 	}
@@ -286,18 +308,6 @@ main img {
 		margin: auto;
 	}
 
-	h1 {
-		font-size: 48px;
-	}
-
-	h2 {
-		font-size: 40px;
-	}
-
-	h4 {
-		font-size: 28px;
-	}
-
 	.title1 {
 		grid-area: 1 / 1 / 2 / 3;
 		justify-content: center;
@@ -313,7 +323,7 @@ main img {
 }
 
 /*Extra Small*/
-@media all and (max-width: 767px) {
+@media all and (max-width: 540px) {
 	header {
 		height: 750px;
 	}
